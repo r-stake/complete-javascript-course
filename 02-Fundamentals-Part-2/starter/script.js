@@ -219,6 +219,9 @@ console.log(`${bilbo.firstName} has ${bilbo.friends.length} friends, and his bes
 */
 
 /*
+/////////////////////////////////////////////////////////////
+console.log("-------- Object Methods ------");
+/////////////////////////////////////////////////////////////
 const bilbo = {
   firstName: "Bilbo",
   lastName: "Baggins",
@@ -255,5 +258,55 @@ console.log(bilbo.age);
 
 // Challenge
 console.log(bilbo.getSummary());
+*/
+
+/*
+/////////////////////////////////////////////////////////////
+console.log("----- Looping Backwards and Loops in Loops ----");
+/////////////////////////////////////////////////////////////
+const bilbo = [
+  "Bilbo",
+  "Baggins",
+  2024 - 1965,
+  "burglar",
+  ["Frodo", "Gandalf", "Elrond"]
+];
+
+for (let i = bilbo.length - 1; i >= 0; i--) {
+  console.log(bilbo[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`-------- Starting exercise ${exercise}`);
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weights repetition ${rep}`);
+  }
+}
+*/
+
+/*
+/////////////////////////////////////////////////////////////
+console.log("----- The while Loop ----");
+/////////////////////////////////////////////////////////////
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep}`);
+// }
+
+let counter = 1;
+while (counter <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${counter}`);
+  counter++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) {
+    console.log(`You rolled a ${dice}`);
+  }
+}
 */
 

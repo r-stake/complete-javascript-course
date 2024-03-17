@@ -68,10 +68,10 @@
 // console.log(populations.length === 4);
 
 // const percentages = [
-//   percentageOfWorld1(populations[0]),
-//   percentageOfWorld1(populations[1]),
-//   percentageOfWorld1(populations[2]),
-//   percentageOfWorld1(populations[3])
+//   percentageOfWorld1(populations[0]).toFixed(2),
+//   percentageOfWorld1(populations[1]).toFixed(2),
+//   percentageOfWorld1(populations[2]).toFixed(2),
+//   percentageOfWorld1(populations[3]).toFixed(2)
 // ];
 // console.log(percentages);
 
@@ -132,3 +132,44 @@
 // console.log(myCountry.describe());
 // console.log(myCountry.checkIsIsland());
 // console.log(myCountry.isIsland);
+
+// /////////////////////////////////////////////////////////////
+// console.log("-------- Iteration: The for Loop --------");
+// /////////////////////////////////////////////////////////////
+// for (let voter = 1; voter <= 50; voter++) {
+//   console.log(`Voter number ${voter} is currently voting`);
+// }
+
+// /////////////////////////////////////////////////////////////
+// console.log("-------- Looping Arrays, Breaking and Continuing --------");
+// /////////////////////////////////////////////////////////////
+// const percentages2 = [];
+// for (let i = 0; i < populations.length; i++) {
+//   percentages2.push(percentageOfWorld1(populations[i]).toFixed(2));
+// }
+
+// console.log(percentages2);
+
+// /////////////////////////////////////////////////////////////
+// console.log("----- Looping Backwards and Loops in Loops ----");
+// /////////////////////////////////////////////////////////////
+// const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden']];
+
+// for (let i = 0; i < listOfNeighbors.length; i++) {
+//   for (let j = 0; j < listOfNeighbors[i].length; j++) {
+//     console.log(`Neighbor: ${listOfNeighbors[i][j]}`);
+//   }
+// }
+
+// /////////////////////////////////////////////////////////////
+// console.log("----- The while Loop ------");
+// /////////////////////////////////////////////////////////////
+// const percentages3 = [];
+
+// let counter = 0;
+// while (counter < populations.length) {
+//   percentages3.push(percentageOfWorld1(populations[counter]).toFixed(2));
+//   counter++;
+// }
+
+// console.log(percentages3);
