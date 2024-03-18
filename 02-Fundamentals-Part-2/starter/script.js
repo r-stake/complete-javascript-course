@@ -262,6 +262,87 @@ console.log(bilbo.getSummary());
 
 /*
 /////////////////////////////////////////////////////////////
+console.log(--------- Iteration: The For Loop ------------); 
+/////////////////////////////////////////////////////////////
+console.log("Lifting weights repetition 1");
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+// Assignment
+for (let index = 1; index <= 50; index++) {
+    console.log(`Voter number ${index} is currently voting`);
+}
+*/
+
+/*
+/////////////////////////////////////////////////////////////
+console.log("------- Looping Arrays, Breaking and Continuing ---------");
+/////////////////////////////////////////////////////////////
+const bilboArray = [
+    "Bilbo",
+    "Baggins", 
+    2024 - 1967,
+    "burglar",
+    ["Frodo", "Gandalf", "Elrond"]
+];
+
+const bilboTypes = [];
+
+for (let i = 0; i < bilboArray.length; i++) {
+    console.log(bilboArray[i], typeof bilboArray[i]);
+
+    // Filling an array with value types
+    // bilboTypes[i] = typeof bilboArray[i];
+    bilboTypes.push(typeof bilboArray[i]);
+}
+
+console.log(bilboTypes);
+
+const years = [1990, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2024 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+for (let i = 0; i < bilboArray.length; i++) {
+    if (typeof bilboArray[i] !== "string") {
+        continue;
+    }
+
+    console.log(bilboArray[i], typeof bilboArray[i]);
+}
+
+for (let i = 0; i < bilboArray.length; i++) {
+    if (typeof bilboArray[i] === "number") {
+        break;
+    }
+
+    console.log(bilboArray[i], typeof bilboArray[i]);
+}
+
+// Assignment
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
+
+const population = [5.1, 14.8, 37.4, 87.2];
+const percentages2 = [];
+
+for (let i = 0; i < population.length; i++) {
+    percentages2.push(percentageOfWorld1(population[i]));
+}
+
+console.log(percentages2);
+*/
+
+/*
+/////////////////////////////////////////////////////////////
 console.log("----- Looping Backwards and Loops in Loops ----");
 /////////////////////////////////////////////////////////////
 const bilbo = [
@@ -309,4 +390,3 @@ while (dice !== 6) {
   }
 }
 */
-
